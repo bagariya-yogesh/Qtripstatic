@@ -63,12 +63,20 @@ footer {
 
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
+/* .wrapee {
+  position: relative;
+  background-color: #dadada;
+} */
+
 .tile-text {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
