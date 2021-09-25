@@ -51,14 +51,22 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative;
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 100%;
+  transition: ease .7s;
+  /* object-fit: contain; */
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(0.5);
+  transform: scale(1.05);
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -69,15 +77,23 @@ footer {
 } */
 
 .tile-text {
-  /* position: absolute; */
-  position: relative;
+  position: absolute;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
+  /* text-align: center; */
+  bottom: 0px;
+  /* left: 0;
+  right: 0;
+  margin: auto; */
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-
-
+a span {
+  letter-spacing: normal;
+}
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
