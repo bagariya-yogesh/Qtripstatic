@@ -1,34 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QTrip Adventures</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QTrip Adventures</title>
-  <link rel="stylesheet" href="../../css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+  <body>
+    <!-- TODO: MODULE_ADVENTURES_GRID -->
+    <!-- 1. Copy navigation bar HTML from Landing page document -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand nav-link">QTrip</a>
 
-<body>
-  <!-- TODO: MODULE_ADVENTURES_GRID -->
-  <!-- 1. Copy navigation bar HTML from Landing page document -->
+        <div class="collapse navbar-collapse" id="collapsible-navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="../../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/adventures/index.html" class="nav-link"
+                >Explore</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsible-navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
 
-  <div class="container">
-    <div class="content">
-      <!-- TODO: MODULE_ADVENTURES_GRID -->
-      <!-- 1. Create the grid of adventures by adding child elements as required. -->
+    <div class="container">
+      <div class="content">
+        <!-- TODO: MODULE_ADVENTURES_GRID -->
+        <!-- 1. Create the grid of adventures by adding child elements as required. -->
+        <div>
+          <h1>Explore all Adventures</h1>
+          <h5>Here is a list of all adventures that you can explore in city</h5>
+          <div class="row adventure-card">
+
+            
+            
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/church.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+            
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/elephant.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>            
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="/pages/adventures/resort/index.html">
+                <img src="/assets/adventures/resort.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/market.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/canopy.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/mount.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/huts.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <a href="#">
+                <img src="/assets/adventures/church.jpg" alt="" />
+                <div class="adv-text-flex">
+                  <p class="card-text">Resort</p>
+                  <p>₹1200</p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <div class="container">© QTrip 2020</div>
-  </footer>
-  
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-  ></script>
-</body>
+    <footer>
+      <div class="container">© QTrip 2020</div>
+    </footer>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
