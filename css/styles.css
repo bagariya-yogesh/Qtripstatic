@@ -194,15 +194,33 @@ a span {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  overflow: hidden;
+
 }
+
+.bdr {
+  border: 2px #dadada solid;
+  border-radius: 1rem;
+}
+
+.sold-out {
+  height: fit-content; 
+  position: fixed;
+  right: 1rem;
+  
+} 
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  max-width: 100%;
+  height: 100%;
+  border-radius: .5rem;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(.8);
 }
 .experience-content ul li {
   margin-left: 16px;
@@ -221,5 +239,11 @@ a span {
   .adv-text-flex {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 992px) {
+  .sold-out {
+    position: static;
+    margin: 4px;
   }
 }
